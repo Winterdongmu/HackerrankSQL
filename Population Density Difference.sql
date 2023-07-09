@@ -18,3 +18,5 @@ print the difference between the maximum and minimum city populations.
 
 SELECT MAX(Population) - MIN(Population)
 FROM City;
+
+select ceil(avg(salary) - avg(to_number(replace(CONCAT(salary,''),'0')))) from employees;
